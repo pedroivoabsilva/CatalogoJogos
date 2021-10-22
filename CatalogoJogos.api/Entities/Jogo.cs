@@ -1,16 +1,14 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using System.ComponentModel.DataAnnotations;
 
-namespace CatalogoJogos.api.ViemModel
+namespace CatalogoJogos.api.Entities
 {
-    public class JogoViewModel
+    public class Jogo
     {
+        [Key]
         public Guid Id { get; set; }
         public string Nome { get; set; }
         public string Produtora { get; set; }
         public decimal Preco { get; set; }
-
     }
 }
